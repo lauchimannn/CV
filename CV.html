@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Choco Lau — CV</title>
+<style>
+  
+:root {
+  --navy: #2c4054;
+  --ink: #34383c;
+  --muted: #819092;
+  --sidebar: #f6f7f7;
+  --blue: #2796df;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #e9edf0;
+  color: var(--ink);
+  font: 14px/1.55 "Segoe UI", Arial, Helvetica, sans-serif;
+}
+
+.cv {
+  width: 8.5in;
+  margin: 24px auto;
+  background: white;
+  box-shadow: 0 3px 18px #0002;
+}
+
+.masthead {
+  height: 31.8mm;
+  background: var(--navy);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.masthead h1 {
+  margin: 0 0 1px;
+  font-size: 36px;
+  line-height: 1.25;
+  font-weight: 750;
+  letter-spacing: .3px;
+}
+
+.masthead .role {
+  font-size: 20px;
+  color: #e2e5e8;
+}
+
+.columns {
+  display: flex;
+  align-items: stretch;
+}
+
+aside {
+  flex: 0 0 35%;
+  width: 35%;
+  background: var(--sidebar);
+  padding: 27px 20px 32px 22px;
+  min-height: 270mm;
+}
+
+main {
+  flex: 0 0 65%;
+  width: 65%;
+  padding: 26px 30px 30px 28px;
+  min-width: 0;
+}
+
+h2 {
+  color: var(--navy);
+  font-size: 18px;
+  line-height: 1.3;
+  font-weight: 750;
+  margin: 0 0 14px;
+  padding-bottom: 7px;
+  border-bottom: 2px solid var(--navy);
+}
+
+.section {
+  margin-bottom: 28px;
+}
+
+.details {
+  margin-top: -2px;
+}
+
+.detail {
+  display: grid;
+  grid-template-columns: 88px minmax(0, 1fr);
+  gap: 2px;
+  margin-bottom: 4px;
+  line-height: 1.3;
+  overflow-wrap: anywhere;
+}
+
+.detail strong,
+.subheading {
+  color: var(--navy);
+  font-weight: 750;
+}
+
+.detail a {
+  color: var(--blue);
+  text-decoration: none;
+}
+
+.subheading {
+  margin: 12px 0 4px;
+}
+
+ul {
+  margin: 4px 0 0;
+  padding-left: 17px;
+}
+
+li {
+  padding-left: 0;
+  margin: 0 0 5px;
+}
+
+.main-section {
+  margin-bottom: 27px;
+}
+
+.profile p {
+  margin: -1px 0 12px;
+  text-align: justify;
+}
+
+.profile .subheading {
+  margin-top: 11px;
+}
+
+.job {
+  margin: 0 0 19px;
+}
+
+.job h3,
+.education h3 {
+  color: var(--navy);
+  font-size: 16px;
+  line-height: 1.35;
+  margin: 0 0 3px;
+  font-weight: 750;
+}
+
+.job-meta {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  color: var(--muted);
+  font-style: italic;
+  margin-bottom: 8px;
+  line-height: 1.4;
+}
+
+.job ul {
+  margin-top: 0;
+}
+
+.education {
+  margin-bottom: 28px;
+}
+
+@page {
+  size: A4;
+  margin: 0;
+}
+
+@media print {
+  body {
+    background: white;
+  }
+
+  .cv {
+    width: 8.5in;
+    margin: 0;
+    box-shadow: none;
+  }
+
+  aside,
+  .masthead {
+    print-color-adjust: exact;
+    -webkit-print-color-adjust: exact;
+  }
+
+  a {
+    color: inherit;
+  }
+}
+</style>
+</head>
+<body>
+<div class="cv">
+  <header class="masthead">
+    <h1>CHOCO LAU</h1>
+    <div class="role">FULL-STACK SOFTWARE DEVELOPER</div>
+  </header>
+  <div class="columns">
+    <aside>
+      <section class="section">
+        <h2>DETAILS</h2>
+        <div class="details">
+          <div class="detail"><strong>Current:</strong><span>Rockhampton, Australia</span></div>
+          <div class="detail"><strong>Phone:</strong><span>+852 90452396</span></div>
+          <div class="detail"><strong>Email:</strong><span>bjenny122@gmail.com</span></div>
+          <div class="detail"><strong>LinkedIn:</strong><span><a href="https://linkedin.com/in/choco-lau">linkedin.com/in/choco-lau</a></span></div>
+          <div class="detail"><strong>Work Type:</strong><span>Fully Remote/Casual/Part-time</span></div>
+          <div class="detail"><strong>Availability:</strong><span>Immediate</span></div>
+        </div>
+      </section>
+      <section class="section skills">
+        <h2>CORE COMPETENCIES</h2>
+        <div class="subheading">Technical Skills:</div>
+        <ul>
+          <li>C#, Python, JavaScript, PHP</li>
+          <li>.NET, ASP.NET, React, Node.js, Flutter</li>
+          <li>WPF, WinForms, XAML</li>
+          <li>Azure, Docker, Git, Bare-metal Hypervisor</li>
+          <li>MSSQL, MySQL, MariaDB</li>
+          <li>RestfulAPI, Agile</li>
+        </ul>
+        <div class="subheading">Soft Skills:</div>
+        <ul>
+          <li>Technical Documentation</li>
+          <li>Cross-functional Collaboration</li>
+          <li>Problem Solving &amp; Analysis</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>LANGUAGES</h2>
+        <ul>
+          <li>Cantonese (Native)</li>
+          <li>Mandarin (Fluent)</li>
+          <li>English (Fluent)</li>
+        </ul>
+      </section>
+      <section class="section">
+        <h2>HOBBIES</h2>
+        <ul>
+          <li>Guitar</li>
+          <li>Anime</li>
+          <li>Video games</li>
+          <li>Theatre</li>
+        </ul>
+      </section>
+    </aside>
+    <main>
+      <section class="main-section profile">
+        <h2>PROFILE</h2>
+        <p>Full-Stack Developer with 3 years of experience in end-to-end solutions for POS/Kiosk systems and scalable web applications (C#, React, FastAPI). Skilled in designing architectures, developing reusable libraries and test tools, and integrating software with hardware (setup/deployment) for both Windows and Linux environments. Effective communicator who collaborates with cross-functional teams to deliver solutions aligned with business needs.</p>
+        <div class="subheading">Development Life-cycle Experience:</div>
+        <ul>
+          <li>Requirements to Design (Flowcharts, API specs)</li>
+          <li>Coding to Testing (writing test specs, debugging)</li>
+          <li>Deployment to Maintenance (hardware setup, user manuals)</li>
+        </ul>
+      </section>
+      <section class="main-section">
+        <h2>EMPLOYMENT HISTORY</h2>
+        <article class="job">
+          <h3>Programmer (Full-time)</h3>
+          <div class="job-meta"><span>KML Engineering Limited | Oct 2022 – Jul 2025</span><span>Hong Kong</span></div>
+          <ul>
+            <li><strong>Real-Time Safety System Upgrade:</strong> Full-stack modernization of pedestrian alert platform; engineered MQTT messaging layer with MariaDB on Ubuntu; added dynamic alert rules using JsonLogic.</li>
+            <li><strong>Fare Collection Systems:</strong> Upgraded QR payment system for enhanced security and unfinished transaction handling; developed Windows POS/Kiosk apps with credit card, QR payment, and Octopus card integration; deployed and configured 10+ terminals across ferry terminals.</li>
+            <li><strong>Hardware Test Tools:</strong> Created a cross-platform testing suite (React/Python) for gate controller systems.</li>
+            <li><strong>AI Customer Services:</strong> Built AI server, user library, and test tool.</li>
+          </ul>
+        </article>
+        <article class="job">
+          <h3>Junior Programmer (Full-time)</h3>
+          <div class="job-meta"><span>KML Engineering Limited | Jul 2022 – Sep 2022</span><span>Hong Kong</span></div>
+          <ul>
+            <li>Assisted in development and maintenance of existing systems</li>
+            <li>Participated in code reviews and team meetings</li>
+            <li>Developed foundational skills in software development processes</li>
+          </ul>
+        </article>
+        <article class="job">
+          <h3>STEAM Teacher (Part-time)</h3>
+          <div class="job-meta"><span>Crystal STEAM | Nov 2021 – Jun 2022</span><span>Hong Kong</span></div>
+          <ul>
+            <li>Designed and taught Scratch programming lessons targeting children in English and Mandarin</li>
+            <li>Created engaging educational materials and activities</li>
+          </ul>
+        </article>
+        <br><br>
+        <article class="job">
+          <h3>STEM Curriculum Developer (Freelance)</h3>
+          <div class="job-meta"><span>Krystal Institute | Apr 2021 – Jun 2021</span><span>Hong Kong</span></div>
+          <ul>
+            <li>Designed beginner programming curriculum (HTML, CSS, JavaScript) for adults in English</li>
+            <li>Prepared written and programming exercises and tests for students</li>
+            <li>Created PowerPoint slides and lecturer notes</li>
+          </ul>
+        </article>
+      </section>
+      <section class="education">
+        <h2>EDUCATION</h2>
+        <h3>BSc (Hons) Information Technology for Business</h3>
+        <div class="school">Coventry University | Sep 2019 – Aug 2022</div>
+      </section>
+      <section>
+        <h2>LICENSES AND CERTIFICATIONS</h2>
+        <ul><li>Construction Induction (White) card</li></ul>
+      </section>
+    </main>
+  </div>
+</div>
+</body>
+</html>
