@@ -26,7 +26,7 @@ body {
 }
 
 .cv {
-  width: 8.5in;
+  width: 210mm;
   margin: 24px auto;
   background: white;
   box-shadow: 0 3px 18px #0002;
@@ -59,11 +59,15 @@ body {
 .columns {
   display: flex;
   align-items: stretch;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 }
 
 aside {
   flex: 0 0 35%;
   width: 35%;
+  margin: 0;
   background: var(--sidebar);
   padding: 27px 20px 32px 22px;
   min-height: 270mm;
@@ -72,8 +76,10 @@ aside {
 main {
   flex: 0 0 65%;
   width: 65%;
+  margin: 0;
   padding: 26px 30px 30px 28px;
   min-width: 0;
+  background: #fff;
 }
 
 h2 {
@@ -178,24 +184,29 @@ li {
 }
 
 @media print {
+  html,
   body {
-    background: white;
+    width: 210mm;
+    margin: 0;
+    padding: 0;
+    background: #fff;
   }
 
   .cv {
-    width: 8.5in;
+    width: 210mm;
     margin: 0;
     box-shadow: none;
+  }
+
+  .columns {
+    display: flex;
+    align-items: stretch;
   }
 
   aside,
   .masthead {
     print-color-adjust: exact;
     -webkit-print-color-adjust: exact;
-  }
-
-  a {
-    color: inherit;
   }
 }
 </style>
@@ -214,7 +225,8 @@ li {
           <div class="detail"><strong>Current:</strong><span>Rockhampton, Australia</span></div>
           <div class="detail"><strong>Phone:</strong><span>+852 90452396</span></div>
           <div class="detail"><strong>Email:</strong><span>bjenny122@gmail.com</span></div>
-          <div class="detail"><strong>LinkedIn:</strong><span><a href="https://linkedin.com/in/choco-lau">linkedin.com/in/choco-lau</a></span></div>
+          <div class="detail"><strong>LinkedIn:</strong><span><a href="https://linkedin.com/in/choco-lau-a3414318a">linkedin.com/in/choco-lau-a3414318a</a></span></div>
+          <div class="detail"><strong>GitHub:</strong><span><a href="https://github.com/lauchimannn/">github.com/lauchimannn/</a></span></div>
           <div class="detail"><strong>Work Type:</strong><span>Fully Remote/Casual/Part-time</span></div>
           <div class="detail"><strong>Availability:</strong><span>Immediate</span></div>
         </div>
@@ -245,6 +257,7 @@ li {
           <li>English (Fluent)</li>
         </ul>
       </section>
+      <br><br><br><br><br><br>
       <section class="section">
         <h2>HOBBIES</h2>
         <ul>
@@ -259,6 +272,7 @@ li {
       <section class="main-section profile">
         <h2>PROFILE</h2>
         <p>Full-Stack Developer with 3 years of experience in end-to-end solutions for POS/Kiosk systems and scalable web applications (C#, React, FastAPI). Skilled in designing architectures, developing reusable libraries and test tools, and integrating software with hardware (setup/deployment) for both Windows and Linux environments. Effective communicator who collaborates with cross-functional teams to deliver solutions aligned with business needs.</p>
+        <p>Planning to pursue a Master’s degree in Australia from early March 2027, and particularly interested in opportunities with the potential to transition to fully remote work while studying.</p>
         <div class="subheading">Development Life-cycle Experience:</div>
         <ul>
           <li>Requirements to Design (Flowcharts, API specs)</li>
@@ -287,6 +301,7 @@ li {
             <li>Developed foundational skills in software development processes</li>
           </ul>
         </article>
+        <br><br><br><br>
         <article class="job">
           <h3>STEAM Teacher (Part-time)</h3>
           <div class="job-meta"><span>Crystal STEAM | Nov 2021 – Jun 2022</span><span>Hong Kong</span></div>
@@ -295,7 +310,6 @@ li {
             <li>Created engaging educational materials and activities</li>
           </ul>
         </article>
-        <br><br>
         <article class="job">
           <h3>STEM Curriculum Developer (Freelance)</h3>
           <div class="job-meta"><span>Krystal Institute | Apr 2021 – Jun 2021</span><span>Hong Kong</span></div>
@@ -311,10 +325,10 @@ li {
         <h3>BSc (Hons) Information Technology for Business</h3>
         <div class="school">Coventry University | Sep 2019 – Aug 2022</div>
       </section>
-      <section>
+      <!-- <section>
         <h2>LICENSES AND CERTIFICATIONS</h2>
         <ul><li>Construction Induction (White) card</li></ul>
-      </section>
+      </section> -->
     </main>
   </div>
 </div>
